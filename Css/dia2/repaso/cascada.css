@@ -1,0 +1,34 @@
+/* lo no heredado pesa más */
+
+h1{
+  color: red;
+}
+
+
+/* ID = 1, 0, 0 */
+#cabecera{
+  color: blueviolet;
+}
+
+
+/* Clase = 0, 1, 0 */
+.cabecera{
+  color: aqua;
+}
+
+.clase{
+  color: green;
+}
+
+
+/* Etiqueta = 0, 0, 1 */
+
+header{
+  color: blue;
+}
+
+
+/* Se pueden combinar */
+header.cabecera{
+  color: yellow;
+}

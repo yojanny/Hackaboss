@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-auto-rows: 10rem;
+
+  gap: 1rem 2rem;
+
+  /* 
+  justify = eje horizontal
+  align = eje vertical
+
+  content = como se colocan las fials/columnas en el contenedor
+
+  items = como se coloca el elemento en la celda
+  */
+
+  /* Eje horizontal */
+  justify-content: space-evenly;
+
+  justify-items: center;
+
+  /* Eje vertical */
+  align-content: space-between;
+
+  align-items: end;
+
+  /* Ambos ejes  (lo mimso, abreviado) */
+  place-content: space-between space-evenly;
+  place-items: end center;
+}
+
+div{
+  border: 1px solid black;
+  background: lightblue;
+  font-size: 2rem;
+  padding: 1rem;
+/* 
+  width: 4rem;
+  height: 4rem; */
+}
+
+
+
+/* Si existe xxx-items, existe xxx-self */
+div:nth-child(5){
+  align-self: center;
+  justify-self: stretch;
+
+
+  place-self: center stretch;
+}

@@ -1,0 +1,29 @@
+/* Algunas propiedades se heredan (aplican también a los hijos */
+
+header{
+  color: blue;
+}
+
+/* Suele ser lógico cuales se heredan y cuales no */
+main{
+  color: blueviolet;
+  border: 1px solid black;
+}
+
+/* Siempre van a pesar más las reglas aplicadas directamente al elemento que las heredadas */
+
+h1{
+  color: blueviolet;
+}
+
+p{
+  color: blue;
+}
+
+
+/* Los enlaces tienen un color propio en el CSS del navegador, por lo que nunca lo heredarán */
+
+a{
+  color: black;
+}
+

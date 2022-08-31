@@ -1,0 +1,42 @@
+p{
+
+  border: 1px solid black;
+  width: fit-content;
+
+}
+
+
+
+#translate p{
+
+  /* horzontal, vertical */
+  /* Tambien hay tranlateX(horizontal) 
+  y tranlateY(vertical) */
+  transform: translate(5rem, -3rem);
+}
+
+#scale p{
+/* horizontal, vertical */
+/* Si solo pongo una medida, afecta a las dos dimensiones */
+/* Si es negativo, se da la vuelta */
+transform: scale(-0.5, -2)
+}
+
+#rotate p{
+  /* En positivo: sentido horario
+  En negativo: sentido antihorario */
+  transform: rotate(30deg);
+}
+
+
+#combo p{
+  /* Tenemos que poner todas las trasfomaciones en la misma regla, porque si no, se sobreescriben */
+  transform: translate(3rem, 5rem) scale(1.5) 
+  rotate(-10deg);
+
+
+  /* Cambiar el punto desde donde se transforma */
+  /* Por defecto es center */
+  /* Se pueden usar palabras clave: top, bottom, left, right, center */
+  transform-origin: 150px 100px;
+}

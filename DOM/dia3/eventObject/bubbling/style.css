@@ -1,0 +1,24 @@
+article{
+  width: 15rem;
+  height: 20rem;
+margin: 3rem auto;
+  border: 1px solid black;
+
+  background: url("http://source.unsplash.com/random");
+  background-size: cover;
+  position: relative;
+
+  cursor: pointer;
+}
+
+article#bubbles{
+  background-image: url("http://source.unsplash.com/random?food");
+}
+
+button{
+  background: lightgray;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

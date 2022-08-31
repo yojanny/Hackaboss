@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <!-- Para vincular CSS externo: -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- En este caso tendrá preferencia la etiqueta style que el CSS externo, porque está más abajo -->
+  <style>
+    p{
+      color: rebeccapurple;
+      text-decoration: underline;
+    }
+    h1{
+      color: green;
+      text-decoration: line-through;
+    }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <h1 style="color: blue;">EMPEZAMOS CSS</h1>
+  </header>
+  <p>
+    Los estilos "en linea"
+ (el atributo style) son la peor opción. No deberíamos escribirlos nunca.  </p>
+ <p>
+   La etiqueta style, que va en el head, es acptable, pero no la mejor opción.
+ </p>
+ <p>
+   La mejor opción es usar hojas de estilo eternas.
+ </p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* Importancia (!important) es lo que más pesa
+Le gana a TODO */
+/* Se aplica a reglas */
+h1{
+  color: blueviolet !important;
+  text-decoration: line-through;
+}
+
+
+/* Especificidad */
+/* Lo segundo que más importa */
+/* Primero se compara el número más a la izquierda y gana el más alto. En caso de empate se mira el de la derecha y así */
+
+/* Etiquetas = 0, 0, 1 */
+ul{
+  list-style: circle;
+}
+
+li{
+  color: blue;
+}
+
+/* Clases, pseudo-clases = 0, 1, 0 */
+
+
+
+li:first-child, li:nth-of-type(5){
+  color: magenta;
+  font-size: 1.2rem;
+}
+
+.especial{
+  color: blueviolet;
+}
+
+
+/* ID = 1, 0, 0 */
+
+#unico {
+  color: red;
+}
+
+#ultimo{
+  color: black;
+  text-decoration: line-through;
+}
+
+#lista :last-child{
+  color: green
+}
+
+/* Lo menos importante es la cascada */
+/* Siempre que coincidan en importancia y especificidad, se aplica el de más abajo */
+
+ul{
+  list-style: square;
+}

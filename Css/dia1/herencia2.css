@@ -1,0 +1,16 @@
+main{
+  color: blue;
+  border: 2px dotted magenta;
+}
+
+p{
+  /* Con initial no se hereda */
+  color: initial; 
+
+  /* Con inherit si se hereda */
+  border: inherit;
+}
+
+a{
+  color: inherit
+}

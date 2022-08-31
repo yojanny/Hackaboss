@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  padding: 2rem;
+  color: white;
+  background-color: black;
+}
+
+main{
+  position: relative;
+}
+
+nav{
+  position: absolute;
+  top: 0;
+  right: -10rem;
+  width: 10rem;
+
+  transition: right 500ms;
+
+}
+
+nav:hover{
+  right: 0;
+}
+
+
+
+menu{
+  background: gray;
+  list-style: none;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+menu li{
+  flex-grow: 1;
+  border-bottom: 1px solid lightgray;
+}
+
+menu a{
+display: block;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+text-decoration: none;
+}
+
+menu a:hover{
+  background: lightgrey;
+}
+
+nav button{
+  width: 2rem;
+  height: 2rem;
+
+  position: absolute;
+  left: -2rem;
+  background: gray;
+  border: none;
+}

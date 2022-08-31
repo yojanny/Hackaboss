@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+
+  /* row | column | row-reverse | column-reverse */
+  flex-direction: row;
+
+  /* nowrap | wrap | wrap-reverse */
+  flex-wrap: wrap;
+
+
+  /* Contenido en eje principal */
+  /* flex-start | flex-end | center | space-around | space-between | space-evenly */
+justify-content: space-evenly;
+
+/* Contenido eje secundario */
+/* A mayores de los de arriba, stretch */
+align-content: stretch;
+
+/* Elementos eje secundario */
+/* stretch | flex-start | flex-end | center | baseline */
+align-items: baseline;
+
+/* Espacio mnimo entre elementos */
+gap:2rem
+
+}
+
+div{
+  border: 1px solid black;
+  background: lightblue;
+  width: 10rem;
+/*   height: 10rem; */
+}
+
+
+div:nth-child(5){
+  font-size: 3rem;
+}

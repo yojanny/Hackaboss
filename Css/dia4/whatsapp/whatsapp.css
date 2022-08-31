@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  --verde: rgb(0, 95, 82);
+  --sombra: 0 1px 3px rgba(0, 0, 0, 0.333);
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  background: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+  
+  font-family: sans-serif;
+}
+
+
+/* HEADER */
+
+header{
+  background-color: var(--verde);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  height: 6rem;
+
+  box-shadow: var(--sombra);
+
+}
+
+header h1{
+  font-size: 1.5rem;
+}
+
+header img{
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header div{
+  color: white;
+  flex-grow: 1;
+
+}
+
+
+header menu{
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+
+
+/* MAIN */
+main{
+  padding: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: auto;
+}
+
+main h2{
+  background-color: lightblue;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: lighter;
+
+  position: sticky;
+  top: 0.2rem;
+
+  box-shadow: var(--sombra);
+
+}
+
+main p{
+  background: white;
+  padding: 0.5rem;
+  width: 75%;
+  border-radius: 10px;
+
+  box-shadow: var(--sombra);
+
+}
+
+main p:not(.me){
+  border-top-left-radius: 0;
+}
+
+main p.me{
+  background: lightgreen;
+  border-top-right-radius: 0;
+  align-self: flex-end;
+}
+
+
+/* FOOTER */
+
+footer{
+  display: flex;
+  padding: 0.5rem;
+}
+
+footer div{
+  flex-grow: 1;
+  background-color: white;
+border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+
+  align-items: center;
+  box-shadow: var(--sombra);
+
+}
+
+footer input{
+  padding: 0.2rem;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+/* BOTONES */
+
+button, header a{
+  display: inline-block;
+  background: none;
+  border: none;
+  font-size: 0;
+  height: 2rem;
+  width: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header a{
+  background-image: url(./icons/arrow.svg);
+}
+
+#video{
+  background-image: url(./icons/video.svg);
+}
+
+#call{
+  background-image: url(./icons/tel.svg);
+}
+
+#menu{
+  background-image: url(./icons/menu.svg);
+}
+
+#emoji{
+  background-image: url(./icons/emoji.svg);
+}
+
+#cam{
+  background-image: url(./icons/cam.svg);
+}
+
+#adj{
+  background-image: url(./icons/clip.svg);
+}
+
+#mic{
+  background-color: var(--verde);
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-size: 50%;
+  background-image: url(./icons/mic.svg);
+
+  box-shadow: var(--sombra);
+
+}
+
+

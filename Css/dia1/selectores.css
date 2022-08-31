@@ -1,0 +1,103 @@
+/* Simples */
+
+/* Etiqueta */
+h1{
+  color: blue;
+}
+
+ul{
+  list-style: none;
+}
+
+/* ID */
+#unico{
+  color: red;
+}
+
+/* Class */
+.importante{
+font-weight: bold;
+text-decoration: underline;
+color: blue;
+}
+
+.especial{
+font-style: italic;
+color: blueviolet;
+}
+
+/* Complejos */
+/* Por atributo */
+
+[lang]{
+  font-family: sans-serif;
+}
+
+[lang="es"]{
+  color: brown;
+}
+
+/* Pseudo-clases */
+:first-child{
+  border: 1px solid red
+}
+
+:first-of-type{
+  box-shadow: 0 0 5px black;
+}
+
+li:hover{
+  color: magenta;
+}
+
+
+/* Pseudo-elementos */
+
+p::first-line{
+  font-size: 1.2rem;
+}
+
+p::first-letter{
+  font-size: 3rem;
+  font-family: serif;
+}
+
+::selection{
+  background: rebeccapurple;
+  color: azure;
+}
+
+h1::after{
+  content: " 😁 a";
+  font-size: 1rem;
+  color: magenta;
+}
+
+li::before{
+  content: "➡️";
+  font-style: normal;
+}
+
+/* Combinar selectores */
+
+/* Hacerlo más específico */
+
+li:nth-child(3) /* li que SEA tercer hijo */
+{
+  text-decoration: line-through;
+}
+
+/* Descendientes */
+section :first-child /* Todos los primeros hijos dentro de section */{
+  color: green;
+}
+
+/* Hijo directo */
+section > p/* los p hijos directos de section */{
+  text-decoration: line-through;
+}
+
+h1, ul{
+  background: lightpink;
+}
+

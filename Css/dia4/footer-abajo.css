@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh; /* ! */
+
+   display: flex;  /* ! */
+  flex-direction: column; /* ! */
+}
+
+header{
+  background: black;
+  color: white;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  padding: 2rem;
+  background: lightblue;
+  flex-grow: 1; /* ! */
+
+ 
+}
+
+
+img{
+  height: 1rem;
+}
+
+footer{
+  background: gray;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}

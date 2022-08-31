@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enlaces</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enlaces</h1>
+    </header>
+    <main>
+      <section>
+        <h2 id="absolutas">Rutas absolutas</h2>
+        <h3 id="locales">Locales</h3>
+        <p>Siempre empiezan por /</p>
+        <p>Van desde la raíz del servidor</p>
+        <a href="/test/index.html">test</a>
+        <a href="/test/test2/index.html">test2</a>
+
+        <h3 id="externas">Externas</h3>
+        <p>Siempre empiezan por http (http:// o https://)</p>
+        <p>Van a otros servidores</p>
+
+        <p>El atributo target con valor _blank abre el enlace en una pestaña nueva</p>
+        <a href="http://google.com" target="_blank" title="Ir a Google">Google</a>
+        <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a>
+      </section>
+
+      <section>
+        <h2 id="relativas">Rutas relativas</h2>
+        <p>empiezan de cualquier forma excepto como empiezan las rutas absolutas o con #</p>
+        <p>Van desde la carpeta actual (donde se encuentre el archivo en el que están escritas)</p>
+
+        <a href="test/index.html">test</a>
+        <a href="test/test2/index.html">test2</a>
+      </section>
+
+      <section>
+          <h2 id="anclas">Anclas</h2>
+          <p>Siempre empiezan por #</p>
+        
+        <p>Apuntan a una parte del documento (hace referencia a un ID)</p>
+        <p>Para que funcionen, debe haber scroll</p>
+        <p>Si es solo #, va a la zona superior de la página</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sunt tenetur, odio quidem velit atque a error libero harum laudantium consequatur, et recusandae! Quod quia nam vero animi totam consequatur?</p>
+
+        <ul>
+          <li>
+            <a href="#absolutas">Rutas absolutas</a>
+            <ul>
+              <li>
+                <a href="#locales">Locales</a>  
+              </li>
+              <li>
+                <a href="#externas">Externas</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#relativas">Rutas relativas</a>
+          </li>
+          <li>
+            <a href="#anclas">Anclas</a>
+          </li>
+          <li>
+            <a href="#">Volver arriba ⬆️</a>
+          </li>
+        </ul>
+      
+
+        <p>Se puede combinar con todas las rutas anteriores para ir directamente a ciertas partes de otros documentos</p>
+      </section>
+
+      
+    </main>
+  </body>
+</html>

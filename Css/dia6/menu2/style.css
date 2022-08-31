@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+
+  color: white;
+  background-color: black;
+
+}
+
+h1{
+  padding: 2rem;
+  text-align: center;
+}
+
+
+nav{
+transition: height 500ms;
+
+  height: 0;
+  overflow: hidden;
+}
+
+header:hover nav{
+  height: 2rem;
+}
+
+
+menu{
+  background: gray;
+  display: flex;
+  list-style: none;
+}
+
+li{
+  flex-grow: 1;
+}
+
+menu a{
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  border-right: 1px solid lightgray;
+}
+
+menu a:hover{
+  background-color: lightgray;
+}

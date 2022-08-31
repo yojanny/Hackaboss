@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 200vh;
+}
+
+div{
+  border: 1px solid black;
+  background: lightblue;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+main{
+  height: 150vh;
+
+  display: grid;
+
+  /* Grid explicita */
+  grid-template-columns: 100px auto 1fr 3fr ; /* 4 */
+  grid-template-rows: 10rem repeat(2, 1fr 100px); /* 5 */
+
+  /* Grid implicita */
+  grid-auto-rows: 10rem 5rem ;
+  grid-auto-columns: 7rem;
+
+/* Cambiar comportamiento por defecto */
+grid-auto-flow: row;
+
+}
+
+
+div:nth-child(1){
+  width: 300px;
+  background-color: lightpink;
+}
+
+div:nth-child(3){
+  grid-column: span 6;
+
+}
+
+div:nth-child(5){
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+div:nth-child(9){
+  grid-column: 3 / 6;
+  grid-row: 1;
+}
+
+div:nth-child(13){
+  grid-column: -1 / -4;
+}

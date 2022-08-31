@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+div{
+  border: 2px solid black;
+  margin-top: 3rem;
+}
+
+#px{
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+}
+
+#em{
+  width: 4em;
+  height: 4em;
+  font-size: 32px;
+}
+
+#rem{
+  width: 8rem;
+  height: 8rem;
+  font-size: 4rem;
+}
+
+/* html{
+  font-size: 10px;
+} */
+
+#vw{
+  width: 50vw;
+  height: 50vw;
+}
+
+#vh{
+  width: 25vh;
+  height: 25vh;
+}
+
+/* html{
+  font-size: 2vmax;
+} */
+
+#per{
+  width: 50%;
+  height: 100px;
+}
+
+#per p{
+  border: 1px solid red;
+  width: 50%;
+  height: 50%;
+}

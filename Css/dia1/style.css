@@ -1,0 +1,23 @@
+/* Cascade StyleSheet
+Hojas de estilo en cascada */
+
+/* 
+selector{
+  propiedad: valor;
+}
+*/
+
+body{
+  background: lightblue;
+}
+
+html{
+  background: rgb(180, 102, 243);
+  font-family: sans-serif;
+}
+
+p{
+  color: blue;
+  font-size: 1.5rem;
+}
+

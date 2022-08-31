@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Listas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Desordenadas</h2>
+        <!-- unordered list -->
+        <p>El orden no importa (pero tampoco va a cambiar)</p>
+
+        <ul>
+          <!-- List item -->
+          <li>Elemento 1 (puede ser cualquier cosa)</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>...</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Ordenadas</h2>
+        <!-- ordered list -->
+        <p>El orden importa. También es información</p>
+
+        <ol>
+          <li>Elemento 1 (puede ser cualquier cosa)</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>...</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Anidadas</h2>
+        <p>ul y ol pueden ser descendientes de li, para crear listas anidadas. Se pueden combinar como queramos</p>
+
+        <ul>
+          <li>
+            <h3>Elemento 1</h3>
+            <ul>
+              <li>Subelemento 1</li>
+              <li>Subelemento 2</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Elemento 2</h3>
+            <ol>
+              <li>Subelemento 1
+                <ol>
+                  <li>Subsubelemento</li>
+                </ol>
+              </li>
+              <li>Subelemento 2</li>
+            </ol>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Lista de definiciones</h2>
+        <!-- Description list -->
+        <p>Para definiciones o descripciones de términos</p>
+
+        <dl>
+          <!-- Description term -->
+          <dt>HTML</dt>
+          <!-- Description Details -->
+          <dd>Lenguaje de marcado de hipertexto, creado para comprartir documentación en el CERN</dd>
+
+
+          <dt>HTTP</dt>
+          <dd>Protocolo de transferencia de hipertexto, creado para enviar a través de la red documnentos HTML</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Ejemplo</h2>
+        <article>
+          <header>
+            <h2>Tortilla de patatas</h2>
+          </header>
+
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>Patatas</li>
+            <li>Huevos</li>
+            <li>Cebolla (opcional)</li>
+            <li>Ajo (opcional)</li>
+            <li>Sal</li>
+          </ul>
+
+          <h3>Instrucciones</h3>
+          <ol>
+            <li>Cortar las patatas</li>
+            <li>Freir las patatas (con ajo y cebolla)</li>
+            <li>Escurrir y añadir huevo batido</li>
+            <li>Concinar un poquito por un lado, voltear, y dejar que se conice otro poco</li>
+            <li>Servir</li>
+          </ol>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

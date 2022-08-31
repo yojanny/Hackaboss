@@ -1,0 +1,19 @@
+.blue{
+color: blue;
+}
+
+.sans{
+font-family: sans-serif;
+}
+
+.big{
+  font-size: 200%;
+}
+
+.subrayado{
+  text-decoration: underline;
+}
+
+h1{
+  color: green;
+}

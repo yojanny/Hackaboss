@@ -1,0 +1,50 @@
+div{
+  border: 1px solid black;
+  margin: 2rem;
+}
+
+#px{ /* Tamaño fijo. Depende de la pantalla */
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+}
+
+#em{/* Proporcional al texto del elemento */
+  width: 7em;
+  height: 7em;
+  font-size: 32px;
+}
+
+#rem{ /* Proporcional al tamaño del texto del HTML */
+  width: 10rem;
+  height: 10rem;
+  font-size: 1rem;
+}
+
+/* html{
+  font-size: 32px;
+} */
+
+#vw{
+  /* Porcentaje del ancho del viewport */
+  width: 50vw;
+  height: 50vw;
+}
+
+#vh{
+  /* Porcentaje del alto del viewport */
+  width: 25vh;
+  height: 25vh;
+}
+
+/* 
+vmin: vh/vw el que sea mas pequeño
+vmax: vh/vw el que sea más grande.
+Muy util cuando la pantalla rota
+*/
+
+#per{
+  /* En rpoporción a su tamaño por defecto */
+  width: 50%;
+  height: 50%;
+}

@@ -1,0 +1,76 @@
+h1{
+  color: blue;
+
+  transition: color 100ms;
+}
+
+h1:hover{
+  color: blueviolet;
+}
+
+p{
+  /* Definir la transicion (abreviada)
+  minimo: propiedad que transiciona y duracion */
+  transition: opacity 1s;
+}
+
+html:hover p{
+  opacity: 0
+}
+
+div{
+  border: 1px solid black;
+  height: 5rem;
+  width: 10rem;
+  background-color: lightblue;
+
+/* transition: transform 500ms; */
+
+/* Propiedad que transiciona */
+transition-property: transform;
+
+/* Cuanto dura la transicion */
+transition-duration: 2s;
+
+/* Cuanto tarda en empezar */
+transition-delay: 500ms;
+
+/* Curva de animacion */
+transition-timing-function: ease-in-out;
+
+
+/* Todo en la propiedad apreviada */
+transition: transform 2s ease-in-out 500ms;
+
+/* En que punto del elemento se origina la transformacin 
+(En sacle y rotate, cual es el punto fijo)
+Por defecto: center */
+transform-origin: bottom right;
+}
+
+
+main:hover div{
+  transform: rotate(-330deg);
+
+}
+
+header:hover ~ main div{
+background-color: lightgreen;
+}
+
+article{
+  border: 1px solid black;
+  width: 15rem;
+  height: 10rem;
+  background-color: blue;
+
+  transition: background-color 1s, transform 500ms;
+  
+  transition-property: background-color, transform;
+  transition-duration: 1s/* , 500ms */;
+}
+
+article:hover{
+  transform: scale(1.3);
+  background-color: blueviolet;
+}

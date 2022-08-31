@@ -1,0 +1,37 @@
+div{
+  border: 1px solid black;
+  width: 10rem;
+  height: 10rem;
+}
+
+#nombre{
+  background-color: blueviolet;
+}
+
+#rgb{
+  /* colores de 0 a 255. 0 = apagado, 255 = a tope */
+  background: rgb(255, 153, 255);
+}
+
+#hex{
+  /* Lo mismo que rgb, pero en base hexadecimal */
+  background-color: #ff99ff;
+  background-color: #F9F;
+
+}
+
+html{
+  background: url("http://source.unsplash.com/random?wallpaper");
+}
+/* CON TRANSPARENCIA */
+#rgba{
+  /* RGB con transparencia. EL ultimo numero es la transparencia
+  0 = transparente, 1 = opaco */
+  background-color: rgba(255, 153, 255, 0.25);
+}
+
+#hexa{
+  /* Lo mismo que hexadecimal, pero con transparencia
+  En este caso si que va de 00 a FF */
+  background: #ff99ff8b;
+}
