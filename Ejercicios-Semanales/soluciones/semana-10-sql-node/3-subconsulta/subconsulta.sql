@@ -1,0 +1,1 @@
+SELECT nombre, edad FROM usuarios WHERE edad = (SELECT MAX(edad) FROM usuarios);

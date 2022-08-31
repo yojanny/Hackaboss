@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debrable</title>
+  </head>
+  <body>
+
+    <header>
+
+      <h1>Debrable</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#top">Mi TOP 10 películas</a>
+          </li>
+          <li>
+            <a href="#viaje">Mi viaje a Japón</a>
+          </li>
+          <li>
+            <a href="#contacto">Mándame un mensaje</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <article id="#top">
+          <h2>Mi TOP 10 películas</h2>
+          <ol> <!-- Para que vaya al revés, atributo reversed -->
+            <li>El padrino</li>
+            <li>La lista de Schindler</li>
+            <li>El padrino. Parte II</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+            <li>pelicula</li>
+          </ol>
+        </article>
+        <article id="viaje">
+          <h2>Mi viaje a Japón</h2>
+          <img src="http://source.unsplash.com/random?japan" alt="Foto de Japón">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, asperiores. Ipsa, aperiam. Consequatur labore repellendus ducimus quaerat, aspernatur quo officiis? Unde in magnam doloremque laboriosam sequi libero at rem modi.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium voluptas maiores temporibus excepturi. Corporis in temporibus commodi sit nostrum.</p>
+        </article>
+      </section>
+
+      <aside>
+        <img src="http://source.unsplash.com/random?girl" alt="Foto de Debra">
+        <h2>Debra Smith</h2>
+        <p>Aquí escribo todo lo que se me ocurre</p>
+
+        <address>
+          <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+        </address>
+      </aside>
+
+      <section id="contacto">
+        <h2>Mándame un mensaje</h2>
+        <form>
+          <fieldset>
+            <ul>
+              <li>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" required>
+              </li>
+              <li>
+                <label for="dob">Fecha de nacimiento:</label>
+                <input type="date" id="dob" required>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <label for="comments">Comentarios</label>
+          <textarea id="comments" cols="30" rows="10" placeholder="Escribe aquí lo que quieras..."></textarea>
+
+          <p>
+            <input type="checkbox" id="news">
+          <label for="news">Suscribirse a newsletter</label>
+          </p>
+          
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="">Términos y condiciones</a>
+        <a href="">Política de privacidad</a>
+      </p>
+    </footer>
+  </body>
+</html>

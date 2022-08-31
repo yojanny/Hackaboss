@@ -1,0 +1,1 @@
+SELECT * FROM usuarios u INNER JOIN direcciones d ON u.id = d.id WHERE pais = (SELECT pais FROM direcciones GROUP BY pais ORDER BY COUNT(*) DESC LIMIT 1);

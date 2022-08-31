@@ -1,0 +1,11 @@
+CREATE TABLE direcciones (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  pais VARCHAR(50),
+  CP INT,
+  dir1 VARCHAR(200),
+  dir2 VARCHAR(200),
+  id_usuario INT UNSIGNED,
+  FOREIGN KEY (id_usuario) REFERENCES usuarios (id)
+);
+
+ALTER TABLE usuarios DROP COLUMN pais, DROP COLUMN CP, DROP COLUMN dir1, DROP COLUMN dir2;

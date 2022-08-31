@@ -1,0 +1,16 @@
+CREATE DATABASE semana_9;
+
+USE semana_9;
+
+CREATE TABLE usuarios (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  dni CHAR(9) UNIQUE NOT NULL,
+  tlf INT,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  nombre VARCHAR(100) NOT NULL,
+  apellidos VARCHAR(150),
+  pais VARCHAR(50),
+  CP INT,
+  dir1 VARCHAR(200),
+  dir2 VARCHAR(200)
+);

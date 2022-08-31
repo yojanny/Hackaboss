@@ -1,0 +1,1 @@
+SELECT * FROM usuarios u LEFT JOIN direcciones d ON u.id_usuario = d.id_usuario;

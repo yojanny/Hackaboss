@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 12rem;
+  grid-template-rows: 10rem 1fr 1fr 10rem;
+  grid-template-areas: 
+  "header header header"
+  "sec1 sec1 sec1"
+  "sec2 sec2 sec2"
+  "foot foot aside"
+
+}
+
+/* Sin usar areas: */
+
+/* header, section{
+  grid-column: span 3
+}
+
+aside{
+  order: 1;
+}
+
+footer{
+  grid-column: span 2;
+} */
+
+/* hasta aqui */
+
+
+
+/* CABECERA */
+header{
+  background-color: lightgrey;
+  grid-area: header;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header h1{
+  font-size: 4rem;
+}
+
+header p{
+  font-size: 2rem;
+}
+
+
+/* SECCIONES */
+
+section{
+  padding: 1rem;
+  align-self: center;
+}
+
+section:nth-of-type(1){
+  grid-area: sec1;
+}
+
+section:nth-of-type(2){
+  grid-area: sec2;
+}
+
+section h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ASIDE */
+aside{
+  background-color: rgb(148, 130, 235);
+  grid-area: aside;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img{
+  display: none;
+}
+
+
+/* FOOTER */
+footer{
+  background-color: cyan;
+  grid-area: foot;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (min-width: 600px){
+  body{
+    grid-template-areas: 
+  "header header header"
+  "sec1 sec2 aside"
+  "sec1 sec2 aside"
+  "foot foot aside" 
+  }
+
+  /* Sin areas: */
+/* section{
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+aside{
+  grid-row: span 3;
+  order: 0;
+} */
+
+/* hasta aqui */
+
+
+  aside{
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  aside img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.509);
+  }
+
+  footer{
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("http://source.unsplash.com/random?time");
+  background-size: cover;
+}
+
+body{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+
+  background: rgba(255, 255, 255, 0.378);
+  backdrop-filter: blur(5px);
+
+  user-select: none;
+}
+
+
+h1{
+  font-size: 10rem;
+  font-family: monospace;
+}
+
+menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+menu button{
+  width: 5rem;
+  padding: 0.3rem 0;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
